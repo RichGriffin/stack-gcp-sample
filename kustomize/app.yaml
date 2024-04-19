@@ -1,0 +1,21 @@
+
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: gcp-sample
+  namespace: argocd
+spec:
+  destination:
+    namespace: crossplane-system
+    server: https://kubernetes.default.svc
+  project: default
+  source:
+    path: app/overlays/dev
+    repoURL: https://github.com/RichGriffin/stack-gcp-sample
+    targetRevision: main
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: false
+    syncOptions:
+    - CreateNamespace=true

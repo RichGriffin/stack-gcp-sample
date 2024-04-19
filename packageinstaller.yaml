@@ -1,0 +1,7 @@
+apiVersion: packages.crossplane.io/v1alpha1
+kind: ClusterPackageInstall
+metadata:
+  name: gcp-sample
+  namespace: crossplane-system
+spec:
+  package: crossplane/stack-gcp-sample:0.6.0
