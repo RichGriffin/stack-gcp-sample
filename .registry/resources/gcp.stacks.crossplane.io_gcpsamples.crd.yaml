@@ -1,6 +1,6 @@
 ---
 apiVersion: apiextensions.crossplane.io/v1
-kind: CustomResourceDefinition
+kind: CompositeResourceDefinition
 metadata:
   creationTimestamp: null
   name: gcpsamples.gcp.stacks.crossplane.io
