@@ -9,4 +9,4 @@ spec:
     key: credentials
     name: gcp-account-creds
     namespace: crossplane-system
-  projectID: gcp-project
+  projectID: my-project-crossplane

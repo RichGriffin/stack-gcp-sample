@@ -4,5 +4,7 @@ resources:
   - cache
   - compute
   - database
+  - bucket.yaml
   # - servicenetworking
   - provider.yaml
+  - providerconfig.yaml
