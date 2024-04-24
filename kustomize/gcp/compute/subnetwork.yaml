@@ -1,10 +1,11 @@
+---
 apiVersion: compute.gcp.crossplane.io/v1beta1
 kind: Subnetwork
 metadata:
-  name: subnetwork
+  name: example
 spec:
   forProvider:
-    region: $(REGION)
+    region: us-central1
     ipCidrRange: "192.168.0.0/24"
     privateIpGoogleAccess: true
     secondaryIpRanges:
@@ -13,7 +14,6 @@ spec:
       - rangeName: services
         ipCidrRange: 172.16.0.0/16
     networkRef:
-      name: network
-  reclaimPolicy: Delete
-  providerRef:
-    name: gcp-provider
+      name: example
+  providerConfigRef:
+    name: example

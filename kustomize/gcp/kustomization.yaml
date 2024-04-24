@@ -4,5 +4,5 @@ resources:
   - cache
   - compute
   - database
-  - servicenetworking
+  # - servicenetworking
   - provider.yaml
