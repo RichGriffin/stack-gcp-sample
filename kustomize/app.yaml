@@ -12,7 +12,7 @@ spec:
   source:
     path: app/overlays/dev
     repoURL: https://github.com/RichGriffin/stack-gcp-sample
-    targetRevision: main
+    targetRevision: master
   syncPolicy:
     automated:
       prune: true
