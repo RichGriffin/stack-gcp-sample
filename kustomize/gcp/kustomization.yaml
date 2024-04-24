@@ -4,6 +4,7 @@ resources:
   - cache
   - compute
   - database
+  - pubsub
   - bucket.yaml
   # - servicenetworking
   - provider.yaml

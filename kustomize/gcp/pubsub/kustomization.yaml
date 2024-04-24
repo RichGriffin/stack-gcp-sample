@@ -1,0 +1,5 @@
+
+resources:
+  - subscription.yaml
+  - topic.yaml
+  - queue.yaml

@@ -11,4 +11,4 @@ spec:
       - name: globaladdress
   reclaimPolicy: Delete
   providerRef:
-    name: default
+    name: gcp-provider

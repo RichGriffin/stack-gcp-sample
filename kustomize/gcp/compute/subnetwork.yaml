@@ -16,4 +16,4 @@ spec:
     networkRef:
       name: default
   providerConfigRef:
-    name: default
+    name: gcp-provider

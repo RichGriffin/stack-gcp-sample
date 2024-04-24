@@ -1,0 +1,14 @@
+apiVersion: pubsub.gcp.crossplane.io/v1alpha1
+kind: Topic
+metadata:
+  name: my-topic
+spec:
+  forProvider:
+    labels:
+      crossplane: provider-aws
+  writeConnectionSecretToRef:
+    name: little-topics-big-secret
+    namespace: crossplane-system
+  providerConfigRef:
+    name: gcp-provider
+  deletionPolicy: Delete

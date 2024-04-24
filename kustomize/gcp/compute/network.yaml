@@ -9,4 +9,4 @@ spec:
     routingConfig:
       routingMode: REGIONAL
   providerConfigRef:
-    name: default
+    name: gcp-provider
