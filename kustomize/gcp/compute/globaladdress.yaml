@@ -8,4 +8,4 @@ spec:
     addressType: INTERNAL
     purpose: VPC_PEERING
   providerConfigRef:
-    name: example
+    name: default
