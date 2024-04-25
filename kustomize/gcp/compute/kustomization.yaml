@@ -6,6 +6,7 @@ resources:
   - network.yaml
   - subnetwork.yaml
   - gkeclusterclass.yaml
+  - autopilot.yaml
   - address.yaml
   - firewall.yaml
   - router.yaml
