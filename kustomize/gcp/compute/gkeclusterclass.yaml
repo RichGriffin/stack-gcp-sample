@@ -8,7 +8,7 @@ spec:
     location: us-west2
     autoscaling:
       autoprovisioningNodePoolDefaults:
-        serviceAccount: SA_Crossplane
+        serviceAccount: SA_Crossplane_Test
     networkConfig:
       enableIntraNodeVisibility: true
     loggingService: logging.googleapis.com/kubernetes
@@ -35,7 +35,7 @@ spec:
     clusterRef:
       name: example-cluster
     config:
-      serviceAccount: SA_Crossplane
+      serviceAccount: SA_Crossplane_Test
       machineType: n1-standard-1
       sandboxConfig:
         type: gvisor
