@@ -5,7 +5,7 @@ metadata:
 spec:
   forProvider:
     initialClusterVersion: "1.20"
-    location: us-west2
+    location: us-central1
     autoscaling:
       autoprovisioningNodePoolDefaults:
         serviceAccount: SA_Crossplane_Test
