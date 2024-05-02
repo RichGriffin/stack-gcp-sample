@@ -1,19 +1,18 @@
----
-apiVersion: compute.gcp.crossplane.io/v1beta1
+apiVersion: compute.gcp.upbound.io/v1beta1
 kind: Subnetwork
 metadata:
-  name: example
+  annotations:
+    meta.upbound.io/example-id: compute/v1beta1/subnetwork
+  labels:
+    testing.upbound.io/example-name: example_subnet
+  name: example-subnet
 spec:
   forProvider:
+    ipCidrRange: 10.2.0.0/16
+    networkSelector:
+      matchLabels:
+        testing.upbound.io/example-name: example_subnet_network
     region: us-central1
-    ipCidrRange: "192.168.0.0/24"
-    privateIpGoogleAccess: true
-    secondaryIpRanges:
-      - rangeName: pods
-        ipCidrRange: 10.128.0.0/20
-      - rangeName: services
-        ipCidrRange: 172.16.0.0/16
-    networkRef:
-      name: gcp-provider
-  providerConfigRef:
-    name: gcp-provider
+    secondaryIpRange:
+      - ipCidrRange: 192.168.10.0/24
+        rangeName: test-secondary-range-update1

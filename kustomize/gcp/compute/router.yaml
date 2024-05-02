@@ -1,18 +1,16 @@
----
-apiVersion: compute.gcp.crossplane.io/v1alpha1
+apiVersion: compute.gcp.upbound.io/v1beta1
 kind: Router
 metadata:
-  name: router-test
+  annotations:
+    meta.upbound.io/example-id: compute/v1beta1/routernat
+  labels:
+    testing.upbound.io/example-name: example_routernat_router
+  name: example-routernat-router
 spec:
   forProvider:
-    description: A test router to verify provider-gcp changes
-    region: us-west1
-    networkRef:
-      name: network-example
-    nats:
-      - name: router-nat-1
-        minPortsPerVm: 2
-        natIpAllocateOption: AUTO_ONLY
-        sourceSubnetworkIpRangesToNat: ALL_SUBNETWORKS_ALL_IP_RANGES
-  providerConfigRef:
-    name: gcp-provider
+    bgp:
+      - asn: 64514
+    networkSelector:
+      matchLabels:
+        testing.upbound.io/example-name: example_routernat_network
+    region: us-central1

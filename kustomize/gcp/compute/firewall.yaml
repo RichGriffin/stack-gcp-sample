@@ -1,16 +1,22 @@
----
-apiVersion: compute.gcp.crossplane.io/v1alpha1
+apiVersion: compute.gcp.upbound.io/v1beta1
 kind: Firewall
 metadata:
-  name: example
+  annotations:
+    meta.upbound.io/example-id: compute/v1beta1/firewall
+  labels:
+    testing.upbound.io/example-name: example_firewall
+  name: example-firewall
 spec:
   forProvider:
-    allowed:
-      - IPProtocol: tcp
-        ports: ["80", "443"]
-      - IPProtocol: icmp
-    sourceRanges: ["10.0.0.0/24"]
-    networkRef:
-      name: gcp-provider
-  providerConfigRef:
-    name: gcp-provider
+    allow:
+      - protocol: icmp
+      - ports:
+          - "80"
+          - "8080"
+          - 1000-2000
+        protocol: tcp
+    networkSelector:
+      matchLabels:
+        testing.upbound.io/example-name: example_firewall_network
+    sourceTags:
+      - web
