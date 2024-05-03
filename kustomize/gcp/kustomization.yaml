@@ -2,9 +2,9 @@ configurations:
   # - kustomizeconfig.yaml
 resources:
   # - cache
-  # - compute
+  - compute
   # - database
   # - pubsub
   - provider
-  - bucket.yaml
+  - storage
   # - servicenetworking

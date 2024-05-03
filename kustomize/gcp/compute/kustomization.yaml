@@ -3,7 +3,7 @@ configurations:
 
 resources:
   # - globaladdress.yaml
-  # - network.yaml
+  - network.yaml
   # - subnetwork.yaml
   # - gkeclusterclass.yaml
   # - autopilot.yaml
