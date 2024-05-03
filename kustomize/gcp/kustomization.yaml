@@ -2,6 +2,7 @@ configurations:
   # - kustomizeconfig.yaml
 resources:
   # - cache
+  - container
   - compute
   # - database
   # - pubsub
