@@ -5,11 +5,8 @@ resources:
   # - globaladdress.yaml
   - address.yaml
   - network.yaml
-  - cluster.yaml
-  - clusternodepool.yaml
   # - subnetwork.yaml
   # - gkeclusterclass.yaml
   # - autopilot.yaml
-  # - address.yaml
-  # - firewall.yaml
+  - firewall.yaml
   # - router.yaml
