@@ -1,11 +1,10 @@
----
-apiVersion: compute.gcp.crossplane.io/v1beta1
+apiVersion: compute.gcp.upbound.io/v1beta1
 kind: GlobalAddress
 metadata:
-  name: example-global-address
+  annotations:
+    meta.upbound.io/example-id: compute/v1beta1/globaladdress
+  labels:
+    testing.upbound.io/example-name: global-address
+  name: global-address
 spec:
-  forProvider:
-    addressType: INTERNAL
-    purpose: VPC_PEERING
-  providerConfigRef:
-    name: gcp-provider
+  forProvider: {}

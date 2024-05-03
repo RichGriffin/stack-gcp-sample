@@ -2,7 +2,7 @@ configurations:
   # - kustomizeconfig.yaml
 
 resources:
-  # - globaladdress.yaml
+  - globaladdress.yaml
   - address.yaml
   - network.yaml
   # - subnetwork.yaml
