@@ -9,4 +9,4 @@ resources:
   # - gkeclusterclass.yaml
   # - autopilot.yaml
   - firewall.yaml
-  # - router.yaml
+  - router.yaml
