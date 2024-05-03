@@ -1,11 +1,11 @@
 apiVersion: storage.gcp.upbound.io/v1beta1
 kind: Bucket
 metadata:
-  name: crossplane-bucket
+  annotations:
+    meta.upbound.io/example-id: storage/v1beta1/notification
   labels:
-    docs.crossplane.io/example: provider-gcp
+    testing.upbound.io/example-name: bucket
+  name: another-crossplane-bucket
 spec:
   forProvider:
     location: US
-  providerConfigRef:
-    name: default
