@@ -1,8 +1,8 @@
 configurations:
-  - kustomizeconfig.yaml
+  # - kustomizeconfig.yaml
 
 resources:
-  - cloudmemorystoreinstance.yaml
+  # - cloudmemorystoreinstance.yaml
 
 # replacements:
 #   - name: REGION

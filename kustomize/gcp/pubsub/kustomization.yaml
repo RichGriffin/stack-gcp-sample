@@ -1,5 +1,5 @@
 
 resources:
-  - subscription.yaml
-  - topic.yaml
-  - queue.yaml
+  # - subscription.yaml
+  # - topic.yaml
+  # - queue.yaml

@@ -1,5 +1,5 @@
 configurations:
-  - kustomizeconfig.yaml
+  # - kustomizeconfig.yaml
 
 resources:
-  - cloudsqlinstanceclass.yaml
+  # - cloudsqlinstanceclass.yaml

@@ -1,12 +1,12 @@
 configurations:
-  - kustomizeconfig.yaml
+  # - kustomizeconfig.yaml
 
 resources:
-  - globaladdress.yaml
-  - network.yaml
-  - subnetwork.yaml
-  - gkeclusterclass.yaml
-  - autopilot.yaml
-  - address.yaml
-  - firewall.yaml
-  - router.yaml
+  # - globaladdress.yaml
+  # - network.yaml
+  # - subnetwork.yaml
+  # - gkeclusterclass.yaml
+  # - autopilot.yaml
+  # - address.yaml
+  # - firewall.yaml
+  # - router.yaml
