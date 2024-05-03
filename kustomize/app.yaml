@@ -10,7 +10,7 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: kustomize/gcp
+    path: kustomize
     repoURL: https://github.com/RichGriffin/stack-gcp-sample
     targetRevision: master
   syncPolicy:
