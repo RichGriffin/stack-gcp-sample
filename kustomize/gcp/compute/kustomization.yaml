@@ -5,7 +5,7 @@ resources:
   # - globaladdress.yaml
   - network.yaml
   - cluster.yaml
-  - clusternode.yaml
+  - clusternodepool.yaml
   # - subnetwork.yaml
   # - gkeclusterclass.yaml
   # - autopilot.yaml
