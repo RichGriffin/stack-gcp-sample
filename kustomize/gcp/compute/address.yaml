@@ -1,11 +1,12 @@
----
-apiVersion: compute.gcp.crossplane.io/v1beta1
+apiVersion: compute.gcp.upbound.io/v1beta1
 kind: Address
 metadata:
-  name: example-address
+  annotations:
+    meta.upbound.io/example-id: compute/v1beta1/vpntunnel
+    upjet.upbound.io/manual-intervention: Dependant reference types not currently supported
+  labels:
+    testing.upbound.io/example-name: vpn-tunnel
+  name: vpn-tunnel
 spec:
   forProvider:
-    addressType: EXTERNAL
-    region: us-east1
-  providerConfigRef:
-    name: gcp-provider
+    region: europe-north1

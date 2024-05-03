@@ -3,6 +3,7 @@ configurations:
 
 resources:
   # - globaladdress.yaml
+  - address.yaml
   - network.yaml
   - cluster.yaml
   - clusternodepool.yaml
