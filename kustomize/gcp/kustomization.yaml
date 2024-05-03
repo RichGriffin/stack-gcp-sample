@@ -1,5 +1,5 @@
 configurations:
-  - kustomizeconfig.yaml
+  # - kustomizeconfig.yaml
 resources:
   # - cache
   # - compute
@@ -7,5 +7,3 @@ resources:
   # - pubsub
   - bucket.yaml
   # - servicenetworking
-  - provider.yaml
-  - providerconfig.yaml
