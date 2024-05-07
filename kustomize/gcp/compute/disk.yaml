@@ -4,7 +4,7 @@ metadata:
   annotations:
     meta.upbound.io/example-id: compute/v1beta1/disk
   labels:
-    testing.upbound.io/example-name: disk
+    testing.upbound.io/example-name: example-disk
   name: example-disk
 spec:
   forProvider:
@@ -13,4 +13,4 @@ spec:
       environment: dev
     physicalBlockSizeBytes: 4096
     type: pd-ssd
-    zone: europe-north1
+    zone: us-central1-a
