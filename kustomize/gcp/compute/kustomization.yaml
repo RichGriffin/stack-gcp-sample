@@ -8,3 +8,4 @@ resources:
   # - subnetwork.yaml
   - firewall.yaml
   - router.yaml
+  - externalvpngateway.yaml
