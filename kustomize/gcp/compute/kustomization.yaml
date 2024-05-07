@@ -10,3 +10,4 @@ resources:
   - router.yaml
   - externalvpngateway.yaml
   - networkpeering.yaml
+  - disk.yaml
