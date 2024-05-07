@@ -13,3 +13,4 @@ resources:
   - disk.yaml
   - globalforwardingrule.yaml
   - urlmap.yaml
+  - nodegroup.yaml
