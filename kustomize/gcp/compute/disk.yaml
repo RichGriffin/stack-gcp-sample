@@ -13,4 +13,4 @@ spec:
       environment: dev
     physicalBlockSizeBytes: 4096
     type: pd-ssd
-    zone: us-central1-a
+    zone: europe-north1

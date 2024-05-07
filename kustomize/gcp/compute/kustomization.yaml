@@ -11,3 +11,5 @@ resources:
   - externalvpngateway.yaml
   - networkpeering.yaml
   - disk.yaml
+  - globalforwardingrule.yaml
+  - urlmap.yaml
