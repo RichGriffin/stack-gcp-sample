@@ -1,0 +1,14 @@
+apiVersion: compute.gcp.upbound.io/v1beta1
+kind: Disk
+metadata:
+  annotations:
+    meta.upbound.io/example-id: compute/v1beta1/snapshot
+  labels:
+    testing.upbound.io/example-name: persistent
+  name: example-persistent-disk
+spec:
+  forProvider:
+    image: image
+    size: 10
+    type: pd-ssd
+    zone: europe-north1
